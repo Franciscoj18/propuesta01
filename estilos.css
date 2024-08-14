@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.separacion{
+    
+    
+    background-image: url(img/altamira2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    height: 400;
+    width: 500;
+    align-items: center;
+   display: flex;
+    justify-content: center;
+    
+}
+
+.contacto{
+    
+    padding: 150px;
+    height: 400;
+    width: 400;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+.boton{
+   
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(244, 244, 244);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #541616;
+    text-align: center;
+    display: inline-flex;
+    margin-right: 10px;
+    margin: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+margin: 10px;
+    
+    
+}
+.avisos{
+    height: 50;
+    width: 400;
+    background-image: linear-gradient(60deg,rgb(79, 16, 16),rgb(206, 136, 56) );
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagenfondo{
+    width: 450px;
+    height: 450px;
+    margin-top: 5px;
+    
+    top: 50px;
+}
+
+
+
+.videos{
+    height: 400;
+    width: 500;
+    margin: 40px;
+}
+
+nav{
+    background: #541616;
+    height: 80px;
+    width: 100%;
+    
+    position: fixed;
+}
+
+label.logo .img{
+
+align-items: center;
+padding: 100;
+height: 70px;
+width: 200px;
+margin: auto;
+position: absolute;
+}
+
+td{
+    display: table-cell;
+    margin-top: 10px;
+}
+
+tr{
+    margin: 1000px;
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.tabla{
+    margin-top: 10px;
+    top: 10px;
+    margin: 40px;
+    
+}
+
+
+#menu{
+    list-style: none;
+    padding: 0;
+}
+#menu .submenu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+#menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#menu li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: #541616;
+    border: 1px solid #8c6b34;
+    padding: 10px;
+}
+
+#menu ul li{
+    display: block;
+    margin: 0;
+
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+
+
+a.active,a:hover{
+    
+    transition: .3s;
+}
+
+nav a:hover{
+    color: rgb(206, 136, 56);
+
+ }
+
+.checkbtn{
+    font-size: 30px;
+    color:aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font: size 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #541616;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #ffffff;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
